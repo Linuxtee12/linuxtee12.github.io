@@ -1,0 +1,32 @@
+body {
+    border: 0px solid red;
+}
+ p {
+     border: 0px solid red;
+     margin: 2rem;
+ }
+ .img {
+     float: left;
+     margin-right: 1rem;
+     margin-bottom: 1rem;
+     
+ }
+ p:after{
+     content: "";
+     display: table;
+     clear: both;
+ }
+ ul{
+     border: 0px solid red;
+     list-style-type: none;
+     margin: 1;
+     padding: 0;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-around;
+ }
+ li {
+    border: 0px dashed green;
+    flex-basis: 10%;
+    
+ }
