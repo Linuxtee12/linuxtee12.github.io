@@ -3,101 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtV1RW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+    <!-- CSS OFFLINE -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Fast Store</title>
+
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div>
-                <img src="img/store.png" alt="" width="75">
-            </div>
-    
-            <ul class="links" > 
-                <li class="dropdown"><a href=""> <span>HOME</span></a>
-                <ul class="links-menu">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+    <!-- START HERE -->
+
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="img/store.png" alt="" width="75"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">HOME</a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item p-3">About</a>
+                            <a href="#" class="dropdown-item p-3">Contact</a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CATEGORIES</a>
+                        <div class="dropdown-menu">
+                            <a href="phone.html" class="dropdown-item p-3">Phones & Tablets</a>
+                            <a href="phone.html" class="dropdown-item p-3">Watches</a>
+                            <a href="#" class="dropdown-item p-3">Shoes</a>
+                            <a href="#" class="dropdown-item p-3">Handbags & Wallets</a>
+                            <a href="#" class="dropdown-item p-3">Laptops</a>
+                        </div>
+                    
+                    
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">ACCOUNT</a>
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item p-3">Login</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="cart.html" class="nav-link">MY CART</a></li>
+                    <li class="nav-item"><a href="bootstrap.html" class="nav-link">Bootstrap</a></li>
                 </ul>
-                </li>
-                <li class="dropdown"><a href=""><span>CATEGORIES</span></a>
-                <ul class="links-menu">
-                    <li><a href="phone.html">Phones & Tablets</a></li>
-                    <li><a href="">Watches</a></li>
-                    <li><a href="">Shoes</a></li>
-                    <li><a href="">Handbags and Wallets</a></li>
-                    <li><a href="">Laptops</a></li>
-        
-                </ul></li>
-                <li class="dropdown"><a href=""><span>ACCOUNT</span></a>
-                <ul class="links-menu">
-                    <li><a href="">Login</a></li>
-                </ul></li>
-                <li class="dropdown"><a href="cart.html"><span>MY CART</span></a></li>
-            </ul>
-    
-    
+            </div>
         </div>
-        
-        <input type="text" id="text" placeholder="Search for products">
+    </nav>
+    <div class="container">
+        <form>
+            <div class="form-row my-2">
+                <div class="col">
+                    <input type="text" class="form-control mr-2 w-80" placeholder="search for products">
+                </div>
+                <div class="form-col">
+                    <button class="btn btn-outline-info">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 my-2">
+                <img src="img/web.jpeg" alt="" width="100%" class="mb-3 img-fluid">
+            </div>
+            <div class="col-lg-6 my-2">
+                <img class="img-fluid" src="img/web2.jpeg" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="container">
+        <div class="row">
+            <form class="col mt-3">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control form-control-lg" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="Confirm Password">
+                </div>
+                <input type="Submit" value="submit" class="btn btn-outline-primary btn-block mb-5" >
+
+            </form>
+        </div>
+    </div>
+   
+
+
     
-        <div>
-            <img src="img/web.jpeg" alt="" width="45%" class="left">
-            <img src="img/web2.jpeg" alt="" width="45%">
+    <footer class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex">
+                    <h3 class=" border-bottom">Information</h3>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link text-dark" href="">About Us</a>
+                    <a class="nav-link text-dark" href="">Delivery information</a>
+                    <a class="nav-link text-dark" href="">Terms & condition</a>
+                    <a class="nav-link text-dark" href="">Help Center</a>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="d-flex">
+                    <h3 class=" border-bottom">Extras</h3>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link text-dark" href="">Brands</a>
+                    <a class="nav-link text-dark" href="">Gift Vouchers</a>
+                    <a class="nav-link text-dark" href="">Affliates</a>
+                    <a class="nav-link text-dark" href="">Special</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex">
+                    <h3 class=" border-bottom">Account</h3>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link text-dark" href="">Whishlist</a>
+                    <a class="nav-link text-dark" href="">Newsletter</a>
+                    <a class="nav-link text-dark" href="">Login</a>
+                    <a class="nav-link text-dark" href="">Register</a>
+                </div>
+            </div>
         </div>
-        </header>
+    </footer>
 
 
-        <div class="cart">
-            <div class="shop">
-                <h3>About Us</h3>
-                <a href="index.html">Home</a>
+    <footer id="main-container" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <h3>FastSTORE</h3>
+                    <p>Copyright &copy; <span id="year"></span></p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
 
+                </div>
             </div>
-            <div class="info">
-                <h3>About Us</h3>
-                <p>FastStore is a platform designed for marketing, <br>
-                    promoting and shipment of products from Producers to Consumers</p>
-            </div>
-            
         </div>
+    </footer>
 
-
-        <footer class="footer">
-            <div class="foot-one">
-                <h3>Information</h3>
-                <ul class="footer-menu one">
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Delivery information</a></li>
-                    <li><a href="">Terms &amp; Conditions</a></li>
-                    <li><a href="">Help Centers</a></li>
-                </ul>
+     <!-- CONTACT MODAL -->
+     <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </div>
             </div>
-            <div class="foot-two">
-                <h3>Extras</h3>
-                <ul class="footer-menu two">
-                    <li><a href="">Brands</a></li>
-                    <li><a href="">Gift Vouchers</a></li>
-                    <li><a href="">Affliates</a></li>
-                    <li><a href="">Specials</a></li>
-                </ul>
-            </div>
-            <div class="foot-three">
-                <h3>My Account</h3>
-                <ul class="footer-menu three">
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Newsletter</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Register</a></li>
-                </ul>
-
-            </div>
-        </footer>
-
-
+        </div>
     </div>
 
 
+    
 
+         
+
+    <script
+    src="http://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<script>
+    // Get the current year for the copy right
+    $('#year').text(new Date().getFullYear());
+</script>
 </body>
 </html>
